@@ -54,6 +54,13 @@
 		font-size: 45px;
 	}
    
+   	#header {
+		display: none;
+	}
+	#about {
+		margin-top: 0px;
+	}
+	
 	#about #top-social{
 		display: none;
 	}
@@ -62,27 +69,35 @@
 		margin-right: 8px;
 		float: left;
 	}
+	
+	#about {
+		padding-top: 20px;
+	}
+	#experience {
+		padding-top: 50px;
+	}
+	#projects {
+		padding-top: 20px;
+	}
+	#connect {
+		padding-top: 20px;
+	}
+	
 }
 
 @media screen and (max-width: 420px) {
+	#container{
+		width:100%;
+	}
+	
 	h1{
 		font-size:25px;
 	}
 	h2{
 		font-size:12px;
 	}
-	#header {
-		display: none;
-	}
-	#about {
-		margin-top: 0px;
-	}
 }
 
-@media screen and (max-width: 320px) {
-   
-   #container{
-		width:80%;
-	}
-
+@media screen and (max-device-width: 320px) {
+	
 }
