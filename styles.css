@@ -3,7 +3,14 @@ body{
 	margin:0px;
 	font: 400 12px/22px 'Open Sans', Verdana, Helvetica, sans-serif;
 	color:#969595;
+	height: 100%;
+	min-height: 100%;
 }
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 h1{font: 400 58px/60px 'Bree Serif', Georgia, serif; color:#D5D5D5;}
 h2{font: 400 20px/22px 'Bree Serif', Georgia, serif; color:#D5D5D5;}
 h3{font: 400 14px/16px 'Bree Serif', Georgia, serif; color:#D5D5D5;}
@@ -13,10 +20,11 @@ a:hover {color:#979797;}
 a img{border:0px;}
 
 #container{
-	width:950px;
-	margin:0px auto 300px auto;
+	width:60%;
+	height: 100%;
+	min-height: 100%;
+	margin:0px auto 0px auto;
 	background:url(images/body-bg.png);
-	overflow:auto;
 	padding-bottom:100px;
 }
 
@@ -39,24 +47,23 @@ a.link{
 /****************************************************/
 
 #header{
-	width:864px;
+	width: 60%;
 	height:115px;
+	margin:0px auto 0px auto;
 	background-color:#222222;
-	padding:0px 43px;
 	position: fixed;
-	top:0px;
-	left:50%;
-	margin: 0 0 0 -475px;
 }
 #header #logo{
 	padding-top:40px;
+	margin-left:27px;
 	float:left;
 }
 #header #main-menu{float:right; padding-top:45px;}
 #header #main-menu li{
-	float:left;
+	display: inline-block;
 	list-style:none;
-	margin-left:27px;
+	margin-left:20px;
+	margin-right: 8px;
 	font: 400 16px/20px 'Bree Serif', Georgia, serif;
 }
 
@@ -89,11 +96,20 @@ a.link{
 	height:26px; 
 	background:url(images/sm-linkedin-icon.png) no-repeat;
 }
-#about .content{overflow:auto;}
-#about .content img{
-	float:left; margin-right:40px;
+#about .content{
+	margin: 0px auto 0px auto;
+	text-align: justify;
+	display: inline-block;
 }
-#about .content #service-icons{margin-top:20px;}
+#about .content img{
+	float:left;
+	margin-right:50px;
+	margin-bottom: 15px;
+	width: auto;
+	max-width: 100%;
+	height: auto;
+}
+#about .content #service-icons{margin-top:30px;}
 #about .content #service-icons li{
 	display:block;
 	width:108px;
@@ -112,30 +128,38 @@ a.link{
 /* EXPERIENCE SECTION */
 /****************************************************/
 
-#experience{margin:0px 43px; padding-top:115px;}
+#experience{
+	padding:30px;
+	padding-top:115px;
+}
 #experience .col{
-	width:235px;
+	width:41%;
+	padding: 20px;
 	float:left;
+}
+#experience .col p {
 	text-align: justify;
 }
-#experience .content{overflow:auto;}
-#experience .col-mid{margin:0px 65px;}
 
 /****************************************************/
 /* PROJECTS SECTION */
 /****************************************************/
 
-#projects{margin:0px 43px; padding-top:115px;}
-#projects .col{
-	width:370px;
-	float:left;
-	text-align: justify;
-	margin:0px 30px;
+#projects{
+	padding:30px;
+	padding-top:115px;
 }
-#projects .content{overflow:auto;}
+#projects .col{
+	width:41%;
+	padding: 20px;
+	float:left;
+}
+#projects .col p {
+	text-align: justify;
+}
 
 /****************************************************/
-/* WORK SECTION */
+/* WORK SECTION (images) */
 /****************************************************/
 
 #work{margin:0px 43px; padding-top:115px;}
@@ -151,32 +175,33 @@ a.link{
 /****************************************************/
 /* CONNECT SECTION */
 /****************************************************/
-#connect{margin:0px 43px; padding-top:115px;}
-#connect .content{overflow:auto;}
+#connect{
+	margin:0px 30px;
+	padding-top:115px;
+}
 #connect #form{
-	width:410px;
+
 	float:left;
 }
 #connect #form span{
-	display:block;
 	float:left;
-	width:100px;
+	width:70px;
 	padding-top:5px;
 	font: 400 14px/16px 'Bree Serif', Georgia, serif;
 }
 #connect #form input{
 	float:left;
-	width:255px;
+	width:250px;
 	border:0px;
 	color:#3b3b3b;
-	padding:10px 10px 10px 30px;
+	padding:10px 10px 10px 10px;
 	font: 400 11px/20px 'Open Sans', Verdana, Helvetica, sans-serif;
 	margin-bottom:10px;
 }
 #connect #form textarea{
 	float:left;
 	border:0px;
-	width:255px;
+	width:230px;
 	height:100px;
 	padding:10px 10px 10px 30px;
 	font: 400 11px/20px 'Open Sans', Verdana, Helvetica, sans-serif;
@@ -199,9 +224,9 @@ a.link{
 }
 
 #connect #social-footer{
-	width:300px;
+	width:25%;
 	float:left;
-	margin-left:75px;
+	margin-left:100px;
 }
 #connect #social-footer #sm-links{margin-top:25px;}
 #connect #social-footer #sm-links li{

@@ -6,9 +6,11 @@
 <meta name="Author" content="Pierre Fourreau, fourreau.pierre@gmail.com">
 <meta name="Identifier-URL" content="fourreau.pierre@gmail.com">
 <meta name="Publisher" content="Fourreau Pierre">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
 
 <title>Pierre Fourreau</title>
 <link href="styles.css" rel="stylesheet" type="text/css">
+<link href="responsive.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
 
 <link rel="icon" type="image/png" href="images/fav.ico" />
@@ -35,17 +37,18 @@
 </head>
 
 <body>
-<div id="header">
-	<div id="logo"><a href="#"><img src="images/logo.png"></a></div>
-	<ul id="main-menu">
-    	<li><a href="#about">A propos</a></li>
-        <li><a href="#experience">Experiences</a></li>
-        <li><a href="#projects">Projets</a></li>
-        <li><a href="#connect">Contact</a></li>
-    </ul>
-</div>
 
 <div id="container">
+
+	<div id="header">
+		<div id="logo"><a href="#"><img src="images/logo.png"></a></div>
+		<ul id="main-menu">
+			<li><a href="#about">A propos</a></li>
+			<li><a href="#experience">Experiences</a></li>
+			<li><a href="#projects">Projets</a></li>
+			<li><a href="#connect">Contact</a></li>
+		</ul>
+	</div>
 
 <!--Begin About Section-->
     <div id="about">
@@ -56,7 +59,7 @@
         </ul>
         <div class="top-divider"></div>
         <div class="content">
-        	<img src="images/designer-photo.png" />
+        	<img src="images/profil.png"/>
             <h2>Pierre Fourreau</h2>
             <p>
 				Je suis un jeune ingénieur d’études et développement diplômé de l'école Polytech'Tours. J'ai déjà travaillé dans le domaine bancaire (BNP Paribas) et dans celui des transports (Thalys) au sein de la société de services Worldline.
@@ -90,7 +93,7 @@
 				</p>
             </div>
             
-			<div class="col col-mid">
+			<div class="col">
 				<h2>Développeur Drupal</h2>
 				<p>
 					<span class="company">Worldline</span>
@@ -104,6 +107,8 @@
 				</p>
             </div>
 			
+			<div style="clear:both"></div>
+			
             <div class="col">
 				<h2>Développeur Android</h2>
 				<p>
@@ -114,9 +119,6 @@
 					Développement d'une application mobile Android permettant à l'utilisateur de recharger avec son téléphone sa carte de transport grâce à la technologie NFC. Un système de vente a aussi été mis en place (paiement bancaire sur téléphone). Vous trouverez le rapport rédigé en cliquant sur ce <a href="upload/rapport_stage_di5.pdf" class="link">lien</a>.
 				</p>
             </div>
-        </div>    
-		
-		<div class="content">
             <div class="col">
 				<h2>Développeur Android</h2>
 				<p>
@@ -128,7 +130,9 @@
 				</p>
             </div>
             
-            <div class="col col-mid">
+			<div style="clear:both"></div>
+			
+            <div class="col">
 				<h2>Développeur VB.NET</h2>
 				<p>
 					<span class="company">Centre Hospitalier du Nord-Mayenne</span>
@@ -140,7 +144,7 @@
             </div>
             
             <div class="col">
-            <h2>Développeur PHP</h2>
+				<h2>Développeur PHP</h2>
 				<p>
 					<span class="company">Jouve</span>
 					<br/>
@@ -183,9 +187,7 @@
 						Langage : C++ avec le framework Qt.
 					</p>
 				</div>
-            </div>
-			
-			<div class="content">
+				<div style="clear:both"></div>
 				<div class="col">
 					<h2>Application Android</h2>
 					<p>
@@ -240,13 +242,14 @@
                 	<form action="envoi.php" method="post" enctype="application/x-www-form-urlencoded" name="formulaire">
                     	<span>Nom</span>
                         <input type="text" name="nom" size="45" maxlength="100" class="name" />
-                        <span>Email</span>
+                        <br/><span>Email</span>
                         <input type="text" name="mail" size="45" maxlength="100" class="email"/>
-						<span>Sujet</span>
+						<br/><span>Sujet</span>
                         <input type="text" name="objet" size="45" maxlength="100" class="message"/>
-                        <span>Message</span>
+                        <br/><span>Message</span>
+						<br/>
                         <textarea name="message" class="message"></textarea>
-                        <input type="submit" name="submite" value="Submit" class="submit">
+                        <br/><input type="submit" name="submite" value="Envoyer" class="submit">
                     </form>
                 </div>
                 <div id="social-footer">
@@ -259,6 +262,8 @@
                 </div>
             </div>
     </div>
+	<div style="clear:both"></div>
+			
 <!--End Connect Section--> 
 
 </div>
