@@ -100,10 +100,10 @@
 										$send_mail = mail($destinataire,$subject,$body,$headers);
 										echo $send_mail;
 										if (send_mail) {
-											$return_message = "Votre mail a été envoyé"; 
+											$return_message = "Votre mail a été envoyé."; 
 
 										} else { 
-											$return_message = "Une erreur s'est produite"; 
+											$return_message = "Une erreur s'est produite."; 
 										} 
 									}
 									else {
