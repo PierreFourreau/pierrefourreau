@@ -165,6 +165,9 @@
 		color: #aaa;
 		position: relative;
 		margin: 0 0 1.6875em 0;
+		
+		text-align: initial;
+		
 	}
 
 	header h2 + p {
